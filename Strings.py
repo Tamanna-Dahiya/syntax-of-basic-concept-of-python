@@ -1,42 +1,59 @@
-# String is a built in data type that store sequence of characters.The sequence of characters is enclosed within single,double,triple quotes
-#To swap multiline string alwasys use single triple quotes , and if you are using post office in string then do not single quotes
-a="coder"# string
-b='coder'#string
-c='''coder'''#string
-print("twinkle twinkle little star
-      how are wonder what you are")# will throw syntax error reason is swap  multiline only by using triple single qoutes 
-print('my father's')# will throw syntax error you have to use here double quotes
-# concatenation is a operation to add two or more string
-name =input("enter your name:") 
-print("goodmorning"+name)
-# len()-it is a function to retrieve number of characters in a string
-x="coder"
+# String is a built-in data type that stores a sequence of characters. The sequence of characters is enclosed within single, double, or triple quotes.
+# To swap multiline string always use single triple quotes, and if you are using an apostrophe in a string then do not use single quotes
+a = "coder"  # string
+b = 'coder'  # string
+c = '''coder'''  # string
+
+# Corrected multiline string usage
+print('''twinkle twinkle little star
+      how I wonder what you are''')
+
+# Corrected usage of quotes with apostrophe
+print("my father's")
+
+# Concatenation is an operation to add two or more strings
+name = input("enter your name: ")
+print("good morning " + name)
+
+# len() - it is a function to retrieve the number of characters in a string
+x = "coder"
 print(len(x))
-#Indexing - it is used to retrieve character from string
-x="Tamanna Dahiya" # consider space  a one character
+
+# Indexing - it is used to retrieve a character from a string
+x = "Tamanna Dahiya"  # consider space as one character
 print(x[0])
 print(x[1])
-x[1]="h"#throw type error as string ius immutable data type
-#Slicing-It is used to fetch a part of string
-x="Tamanna Dahiya" # consider space  a one character
-print(x[1:4])#will exclude upper limit
-# some other functions let's first discuss first function endswith
-print(x.endswith("ya"))# return answer either true or false
-#capitalize ()-will convert first letter to upper case
-x="tamanna Dahiya" # consider space  a one character
-x.capitalize()
-print(x)
-# replace()-will repalce character from string to another character
-x.replace("a","c")
-print(x)
-# find()-will retrieve index of given character of first occurence
-x.find("a")
-print(x)
-#count()-will tell the number of times a character comes in a string
-x.count("a")
-print(x)
-#Escape sequence characters starting with backslash followed with one or more chacters generally used for formatting
-#/a-beep sound 
-#/n-new line
-#/t-tab space
-#/a,/n,/t considered to be single character
+
+# Removed incorrect assignment to immutable string
+# x[1] = "h"  # throws type error as string is an immutable data type
+
+# Slicing - It is used to fetch a part of a string
+x = "Tamanna Dahiya"  # consider space as one character
+print(x[1:4])  # will exclude upper limit
+
+# Some other functions let's first discuss endswith
+print(x.endswith("ya"))  # returns answer either true or false
+
+# capitalize() - will convert the first letter to uppercase
+x = "tamanna Dahiya"  # consider space as one character
+print(x.capitalize())
+
+# replace() - will replace a character in the string with another character
+print(x.replace("a", "c"))
+
+# find() - will retrieve the index of the given character of the first occurrence
+print(x.find("a"))
+
+# count() - will tell the number of times a character comes in a string
+print(x.count("a"))
+
+# Escape sequence characters starting with backslash followed by one or more characters generally used for formatting
+# \a - beep sound
+# \n - new line
+# \t - tab space
+# \a, \n, \t considered to be single characters
+
+# Mistakes and Refactoring:
+# 1. Fixed multiline string and apostrophe usage.
+# 2. Removed incorrect assignment to immutable string.
+# 3. Improved readability and consistency in comments.
